@@ -1,0 +1,29 @@
+.__navbar{
+    background-color: #362c44;
+    height: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .__name_brand{
+        font-size: 18px;
+        padding-left: 15px;
+    }
+
+    .__navlink{
+        display: flex;
+        li{
+            padding: 4px;
+            list-style-type: none;
+
+            a{
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

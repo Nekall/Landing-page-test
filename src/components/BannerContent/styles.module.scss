@@ -1,0 +1,16 @@
+.__banner_content {
+    display: grid;
+    margin: 25px auto;
+    border: solid 2px #362c44;
+    width: 90%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: -5px -5px 0 0 #362c44;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
