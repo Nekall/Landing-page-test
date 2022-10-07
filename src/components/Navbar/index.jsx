@@ -3,9 +3,11 @@ import styles from "./styles.module.scss";
 
 const Navbar = () => {
   const links = [
-    {target: "#Link1", name: "Link1"},
-    {target: "#Link2", name: "Link2"},
-    {target: "#Link3", name: "Link3"}
+    {target: "#batcat", name: "Batcat"},
+    {target: "#doghost", name: "Doghost"},
+    {target: "#gravestone", name: "Gravestone"},
+    {target: "#hantedHouse", name: "Hanted House"},
+    {target: "#pumpkins", name: "Pumpkins"},
   ]
 
   return( <nav className={styles.__navbar}>

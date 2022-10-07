@@ -15,11 +15,11 @@ import styles from "../styles/pages/home.module.scss";
 
 const Home = () => {
   const arrImg = [
-    {image: batcat, alternativeText: "batcat"},
-    {image: doghost, alternativeText: "doghost"},
-    {image: gravestone, alternativeText: "gravestone"},
-    {image: hantedHouse, alternativeText: "hantedHouse"},
-    {image: pumpkins, alternativeText: "pumpkins"},
+    {image: batcat, alternativeText: "batcat", id: "batcat"},
+    {image: doghost, alternativeText: "doghost", id: "doghost"},
+    {image: gravestone, alternativeText: "gravestone", id: "gravestone"},
+    {image: hantedHouse, alternativeText: "hantedHouse", id: "hantedHouse"},
+    {image: pumpkins, alternativeText: "pumpkins", id: "pumpkins"},
   ];
   return (
     <div className={styles.__home}>
@@ -27,7 +27,7 @@ const Home = () => {
       <section className={styles.__container}>
         {arrImg.map((img, index)=>{
             return(
-                <BannerContent key={`banner-content-${index}`} image={img.image} alternativeText={img.alternativeText} />
+                <BannerContent key={`banner-content-${index}`} id={img.id} image={img.image} alternativeText={img.alternativeText} />
             )
         })}
       </section>
